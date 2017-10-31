@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MyServerApp</title>
+		<style>
+		* {
+			margin: 0;
+			padding:0;
+		}
+			#home {
+				height: 100%;
+				width: 100%;
+				background-color: blue;
+				background-image: url("http://youryoga.org/all_photo/oboi/2013god.jpg");
+				//background-attachment: fixed;
+			}
+			#sidebar{
+				width: 35%;
+				float: right;
+			}
+			#gettasks {
+				//position: relative;
+				//left: 65%;
+				background-color: rgba(255,0,0,0.4);
+				padding: 5px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			#settasks {
+				//position: relative;
+				//left: 65%;
+				background-color: rgba(0,255,0,0.4);;
+				padding: 5px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			#deletetask {
+				//position: relative;
+				//left: 65%;
+				background-color: rgba(0,150,150,0.4);;
+				padding: 5px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			#list {
+				//position: absolute;
+				float: left;
+				height: 95%;
+				width: 58%;
+				background-color:  rgba(0,0,255,0.4);	
+				padding: 5px;
+				margin-top: 2%;
+				margin-left: 2%;
+				margin-right: 2%;
+				position: left;
+			}
+			#text {
+				font-size: 20px;
+				font-weight: bold;
+				font-style: italic;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="home">
+			<div id="list">
+				<h2 id="text" align="center">Список задач</h2>
+				<ol id="#tasks">
+				</ol>
+			</div>
+			<div id ="sidebar">
+				<div id="gettasks">
+					<form>
+						<h2 id = "text">Загрузить список</h2>
+						<input type="button" value = "Достать задачи" onClick = "getTasks()">
+					</form>
+				</div>
+				<div id="settasks">
+					<form onsubmit="return noSubmit()">
+						<h2 id = "text">Добавить елемент</h2>
+						<h4 id = "text">Name</h4>
+						<input type="text" id="setnametext">
+						<h4 id = "text">Description</h4>
+						<input type="text" id="setdesktext">
+						<input type="button" value = "Отправить" onClick = "setTask();">
+					</form>
+				</div>
+				<div id="deletetask">
+					<form onsubmit="return noSubmit()">
+						<h2 id = "text">Удалить елемент</h2>
+						<h4 id = "text">Name</h4>
+						<input type="text" id="deletenametext">
+						<input type="button" value = "Отправить" onClick = "deleteTask();">
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		<script src="script.js" async="" defer=""></script>
+	</body>
+</html>
