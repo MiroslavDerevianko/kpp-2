@@ -6,8 +6,8 @@
       3. Відкрити myapp.html
       
       Зображення роботи
-     ![alt text](https://github.com/MiroslavDerevianko/Kpp/kpp-2/master/printscreen_01.png) 
+     ![alt text](https://github.com/MiroslavDerevianko/kpp-2/blob/master/printscreen_01.png) 
      
-     ![alt text](https://github.com/MiroslavDerevianko/Kpp/kpp-2/master/printscreen_02.png)
+     ![alt text](https://github.com/MiroslavDerevianko/kpp-2/blob/master/printscreen_02.png)
      
-     ![alt text](https://github.com/MiroslavDerevianko/Kpp/kpp-2/master/printscreen_03.png)
+     ![alt text](https://github.com/MiroslavDerevianko/kpp-2/blob/master/printscreen_03.png)
